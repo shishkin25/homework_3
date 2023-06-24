@@ -1,0 +1,15 @@
+@import '@/scss/base/variables.scss';
+
+.btn {
+	border-radius: 4px;
+	background-color: $bgc-primary;
+	font-weight: 400;
+	font-size: $fz-default;
+	color: $font-secondary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 42px;
+    width: 200px;
+	cursor: pointer;
+}

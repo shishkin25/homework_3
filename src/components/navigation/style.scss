@@ -1,0 +1,77 @@
+@import '@/scss/base/variables.scss';
+@import '@/scss/blocks/btn.scss';
+
+.menu {
+    padding: 24px 0;
+    background-color: $bgc-primary;
+    &__nav {
+        width: 300px;
+        margin: 0 auto;
+        &-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-item {
+            border: 1px solid $bgc-secondary;
+            &:nth-child(1) {
+                width: 92px;
+            }
+            &:nth-child(2) {
+                width: 82px;
+            }
+            &:nth-child(3) {
+                width: 130px;
+            }
+            &:hover {
+                background-color: $bgc-secondary-hover;
+                a {
+                    color: $font-primary;
+                }
+            }
+            &.menu__nav-item_active {
+                background-color: $bgc-secondary;
+                cursor: default;
+            }
+            a {
+                color: $font-secondary;
+                text-decoration: none;
+            }
+            .primary-font {
+                color: $font-primary;
+                cursor: default;
+            }
+        }
+    }
+    &__user {
+        &-btn {
+            width: 88px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                border: 1px solid $bgc-secondary;
+            }
+            &.menu__user-btn_active {
+                background-color: $bgc-secondary;
+                border: none;
+                .menu__user-arrow {
+                    color: $bgc-secondary-active;
+                }
+            }
+        }
+        &-arrow {
+            margin: 0 0 0 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $bgc-secondary;
+            svg {
+                width: 13px;
+                height: 8px;
+            }
+        }
+    }
+}

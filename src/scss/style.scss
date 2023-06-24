@@ -1,0 +1,28 @@
+@import '@/scss/base/fonts.scss';
+
+@import '@/components/navigation/style.scss';
+@import '@/components/btns-tasks/style.scss';
+@import '@/components/btns-projects/style.scss';
+
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+}
